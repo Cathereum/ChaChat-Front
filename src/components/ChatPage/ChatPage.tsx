@@ -4,7 +4,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { IMessageToChat, IUser } from "../../interfaces/user.interface";
 
-const socket = io("http://localhost:8082");
+const socket = io("https://chachat-back.onrender.com");
 
 export const ChatPage = () => {
   const [activeUser, setActiveUser] = useState<IUser>({
