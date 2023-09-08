@@ -1,0 +1,30 @@
+.wrapper {
+  @apply py-2 px-4 flex flex-col gap-2;
+
+  &.user {
+    @apply items-start justify-start;
+
+    .text {
+      @apply break-all bg-zinc-700 rounded-tl-[0px] py-2 px-4 rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px];
+    }
+
+    .name {
+      @apply text-sm;
+    }
+  }
+
+  &.me {
+    @apply items-end justify-end;
+    .text {
+      @apply break-all bg-detailsColor text-black rounded-tl-[20px] py-2 px-4 rounded-tr-[20px] rounded-bl-[20px] rounded-br-[0px];
+    }
+  }
+
+  &.admin {
+    @apply items-center justify-center;
+
+    .text {
+      @apply break-all bg-zinc-500 p-2 rounded-lg opacity-50 text-sm;
+    }
+  }
+}

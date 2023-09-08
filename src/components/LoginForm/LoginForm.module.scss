@@ -1,0 +1,26 @@
+.wrapper {
+  @apply bg-secondAppColor flex flex-col  h-[300px] w-[500px] rounded-tl-[0px] rounded-tr-[50px] rounded-bl-[50px] rounded-br-[50px];
+
+  .header {
+    @apply py-2 px-4 h-[25%] w-full  flex items-center justify-start gap-4;
+
+    > img {
+      @apply w-10 h-10;
+    }
+    > span {
+      @apply text-3xl font-bold text-detailsColor;
+    }
+  }
+
+  > form {
+    @apply w-full items-center flex flex-col gap-4;
+
+    > input {
+      @apply w-[80%] h-[50px] opacity-80 border-gray-400 border-b-[1px] bg-secondAppColor rounded-md focus:outline-none focus:border-white;
+    }
+
+    > button {
+      @apply bg-detailsColor py-2 px-4 rounded-md text-black;
+    }
+  }
+}
