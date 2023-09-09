@@ -74,10 +74,6 @@ export const ChatPage = () => {
     navigate("/");
   };
 
-  console.log("activeUser", activeUser);
-  console.log("messageToChat", messageToChat);
-  console.log("usersInRoom", usersInRoom);
-
   return (
     <ChatRoom
       userMessage={userMessage}
